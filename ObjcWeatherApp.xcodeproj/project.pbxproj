@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D81DF9502A0E76160014FA71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D81DF94F2A0E76160014FA71 /* main.m */; };
+		D81DF9572A0E78720014FA71 /* WeatherService.m in Sources */ = {isa = PBXBuildFile; fileRef = D81DF9562A0E78720014FA71 /* WeatherService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,9 @@
 /* Begin PBXFileReference section */
 		D81DF94C2A0E76160014FA71 /* ObjcWeatherApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjcWeatherApp; sourceTree = BUILT_PRODUCTS_DIR; };
 		D81DF94F2A0E76160014FA71 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D81DF9562A0E78720014FA71 /* WeatherService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherService.m; sourceTree = "<group>"; };
+		D81DF95A2A0E7B440014FA71 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		D81DF95B2A0E7C890014FA71 /* WeatherService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherService.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				D81DF94F2A0E76160014FA71 /* main.m */,
+				D81DF9562A0E78720014FA71 /* WeatherService.m */,
+				D81DF95B2A0E7C890014FA71 /* WeatherService.h */,
+				D81DF95A2A0E7B440014FA71 /* Constants.h */,
 			);
 			path = ObjcWeatherApp;
 			sourceTree = "<group>";
@@ -119,6 +126,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D81DF9572A0E78720014FA71 /* WeatherService.m in Sources */,
 				D81DF9502A0E76160014FA71 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
