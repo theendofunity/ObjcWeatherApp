@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		D81DF9502A0E76160014FA71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D81DF94F2A0E76160014FA71 /* main.m */; };
 		D81DF9572A0E78720014FA71 /* WeatherService.m in Sources */ = {isa = PBXBuildFile; fileRef = D81DF9562A0E78720014FA71 /* WeatherService.m */; };
+		D8D360452A12218100B38B42 /* NSURL+Query.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D360442A12218100B38B42 /* NSURL+Query.m */; };
+		D8D360482A12675D00B38B42 /* WeatherData.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D360472A12675D00B38B42 /* WeatherData.m */; };
+		D8EF7B152A12749D00D78848 /* WeatherData.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EF7B142A12749D00D78848 /* WeatherData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +32,13 @@
 		D81DF9562A0E78720014FA71 /* WeatherService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherService.m; sourceTree = "<group>"; };
 		D81DF95A2A0E7B440014FA71 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		D81DF95B2A0E7C890014FA71 /* WeatherService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherService.h; sourceTree = "<group>"; };
+		D8D3603E2A121CA700B38B42 /* WeatherServiceBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherServiceBase.h; sourceTree = "<group>"; };
+		D8D360432A12218100B38B42 /* NSURL+Query.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+Query.h"; sourceTree = "<group>"; };
+		D8D360442A12218100B38B42 /* NSURL+Query.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Query.m"; sourceTree = "<group>"; };
+		D8D360462A12663800B38B42 /* WeatherData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherData.h; sourceTree = "<group>"; };
+		D8D360472A12675D00B38B42 /* WeatherData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherData.m; sourceTree = "<group>"; };
+		D8EF7B142A12749D00D78848 /* WeatherData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherData.m; sourceTree = "<group>"; };
+		D8EF7B162A127FCD00D78848 /* ApiParameters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiParameters.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +55,7 @@
 		D81DF9432A0E76160014FA71 = {
 			isa = PBXGroup;
 			children = (
+				D8D360472A12675D00B38B42 /* WeatherData.m */,
 				D81DF94E2A0E76160014FA71 /* ObjcWeatherApp */,
 				D81DF94D2A0E76160014FA71 /* Products */,
 			);
@@ -61,12 +72,42 @@
 		D81DF94E2A0E76160014FA71 /* ObjcWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				D8D3604B2A12687000B38B42 /* Categories */,
+				D8D3604A2A12686700B38B42 /* Services */,
+				D8D360492A12685C00B38B42 /* Models */,
 				D81DF94F2A0E76160014FA71 /* main.m */,
-				D81DF9562A0E78720014FA71 /* WeatherService.m */,
-				D81DF95B2A0E7C890014FA71 /* WeatherService.h */,
 				D81DF95A2A0E7B440014FA71 /* Constants.h */,
 			);
 			path = ObjcWeatherApp;
+			sourceTree = "<group>";
+		};
+		D8D360492A12685C00B38B42 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D8D360462A12663800B38B42 /* WeatherData.h */,
+				D8EF7B142A12749D00D78848 /* WeatherData.m */,
+				D8EF7B162A127FCD00D78848 /* ApiParameters.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D8D3604A2A12686700B38B42 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D81DF9562A0E78720014FA71 /* WeatherService.m */,
+				D81DF95B2A0E7C890014FA71 /* WeatherService.h */,
+				D8D3603E2A121CA700B38B42 /* WeatherServiceBase.h */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D8D3604B2A12687000B38B42 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D8D360432A12218100B38B42 /* NSURL+Query.h */,
+				D8D360442A12218100B38B42 /* NSURL+Query.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8EF7B152A12749D00D78848 /* WeatherData.m in Sources */,
 				D81DF9572A0E78720014FA71 /* WeatherService.m in Sources */,
+				D8D360452A12218100B38B42 /* NSURL+Query.m in Sources */,
+				D8D360482A12675D00B38B42 /* WeatherData.m in Sources */,
 				D81DF9502A0E76160014FA71 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
